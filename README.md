@@ -10,7 +10,7 @@ Javascript logic is encased in a window on load function to prevent execution be
 The on-input function called for each input action is identical, this is to ensure dynamic recalculation and result updates on screen.
 The slide bar and numerical input values are synchronized within the markup tags with references to the other's value on input. 
 
-The mathematical formula used for the lease calculation I learned (here)[https://math.libretexts.org/Bookshelves/Applied_Mathematics/Contemporary_Mathematics_(OpenStax)/06%3A_Money_Management/6.12%3A__Buying_or_Leasing_a_Car] - this is a math textbook website.
+The mathematical formula used for the lease calculation I learned (https://math.libretexts.org/Bookshelves/Applied_Mathematics/Contemporary_Mathematics_(OpenStax)/06%3A_Money_Management/6.12%3A__Buying_or_Leasing_a_Car)[ - this is a math textbook website.]
 
 The task was solved by styling the markup first and then developing the logic through the console.
 User input is regulated by the form input types and value validation that prevents the display of out-of-bounds calculations. The only two areas that allow out-of-bound input are the two number fields for Car Value and Down Payment, the misuse of each prints a specific "Invalid [blank]" message next to the Down Payment result section. 
