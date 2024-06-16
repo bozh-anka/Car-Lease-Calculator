@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="CarLeaseFunc.js"></script>
+	<head>
+		
+		<link rel="stylesheet"  href="CarLeaseStyle.css"/>
+		
+		<title>Car Leasing Calculator</title>
+		<h1>Car Leasing Calculator</h1>
+			
+		<script type="text/javascript" scr="CarLeaseFunc.js"></script>
+	</head>
+	<body>
+	<form>
+		<section class="container">
+		<div class="one">
+		<div class = "CarT">
+			<label for="use">Car Type:</label><br>
+			
+			
+			<select name="carUse" id = "use" >
+			<option value = "New">Brand New</option>
+			<option value = "Used">Used</option>	
+			</select>
+		</div>
+		<div class = "CarV">
+			<br>
+		<label for = "val">Car Value(&#128;10 000 - &#128;200 000)</label><br>
+		<input type="number" id = "val" name = "val" value = "10000" oninput="Cval.value=this.value">
+		</div>
+	<br>
+		<input type="range" id="Cval" name="Car value" min="10000" max="200000" value = "10000" oninput="val.value = this.value" /> </div>
+		<div class="two">
+		<label for="L">Lease Period</label> <br>
+			<select name="carL" id = "L">
+			<option value="12" id = "lease">12</option>
+			<option value="24" id = "lease">24</option>
+			<option value="36" id = "lease">36</option>
+			<option value="48" id = "lease">48</option>
+			<option value="60" id = "lease">60</option>
+			</select>
+		<br>
+		<div class = "DownP">
+			<br>
+			<label for= "Dp">Down Payment (10% - 50%):</label>
+			<br>
+		<input type="number" id= "Dp" name="Dp" value="10" step="5" oninput="down.value = this.value"> <br>
+			<br>
+			<! --- Downpayment range to be calculated dynamically based on car value ---->
+		 <input type="range" id="down" name="down" min="10" max="50" step="5" value = "5" oninput="Dp.value = this.value"/>
+		
+		</div>
+		</div>
+		</section>
+		<selection class ="container1">
+		
+			<h2>Leasing Details</h2>
+			<div class = "one1"> <p4 id ='total'>Total Leasing Cost: </p4><p id="downP">  Down Payment: &#128;500.00</p> </div>
+			<div class = "two1"> <p id= 'monthly'> Monthly installment:</p><p id = 'interest'>   Interest Rate: 2.99%</p></div>
+		</selection>
+		</form>
+	
+	
+	</body>
+
+
+</html>
